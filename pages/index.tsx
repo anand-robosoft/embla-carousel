@@ -17,6 +17,7 @@ export default function Home() {
       <main className={styles.main}>
         <div className={styles.description}>
           <Link href={`/simpleCarousel`}>carousel</Link>
+          <Link href={`/arrowCarousel`}>carousel with arrow</Link>
         </div>
       </main>
     </>

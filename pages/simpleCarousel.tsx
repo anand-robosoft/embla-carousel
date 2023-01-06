@@ -4,7 +4,7 @@ import Autoplay from 'embla-carousel-autoplay'
 import styles from '../styles/SimpleCarousel.module.css'
 
 const SimpleCarousel = () => {
-  const [emblaRef] = useEmblaCarousel({ loop: true }, [Autoplay()])
+  const [emblaRef] = useEmblaCarousel({ loop: false, dragFree: true }, [Autoplay()])
 
   return (
     <div className={styles.embla} ref={emblaRef}>
