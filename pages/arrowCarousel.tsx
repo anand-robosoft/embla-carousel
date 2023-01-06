@@ -47,8 +47,8 @@ const ArrowCarousel = () => {
     <>
       <div className={styles.embla} ref={emblaRef}>
         <div className={styles.embla__container}>
-          {scrollSnaps.map((item) => (
-            <div className={styles.embla__slide}>Slide {item}</div>
+          {scrollSnaps.map((item, index) => (
+            <div key={item} className={styles.embla__slide}>Slide {index + 1}</div>
           ))}
         </div>
       </div>
